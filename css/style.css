@@ -22,14 +22,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 5vh;
-  background: blue;
 }
 
 header h1,
 header nav {
   text-align: center;
   width: 50vw;
-  background: chartreuse;
 }
 
 header ul {
@@ -37,11 +35,19 @@ header ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background: cornflowerblue;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   list-style: none;
+}
+
+main {
+  /* simple div pour permettre de positionner la nav fixe au dessus de la 1ere section sans la recouvrir sur 5vh */
+}
+
+main .margin-nav {
+  height: 5vh;
+  background: greenyellow;
 }
 
 main #section1,

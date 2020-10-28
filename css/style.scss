@@ -17,23 +17,28 @@ header {
   display: flex;
   align-items: center;
   height: 5vh;
-  background: blue;
+  //   background: blue;
   h1,
   nav {
     text-align: center;
     width: 50vw;
-    background: chartreuse;
+    // background: chartreuse;
   }
   ul {
     display: flex;
     width: 100%;
-    background: cornflowerblue;
+    // background: cornflowerblue;
     justify-content: space-evenly;
     list-style: none;
   }
 }
 
 main {
+  /* simple div pour permettre de positionner la nav fixe au dessus de la 1ere section sans la recouvrir sur 5vh */
+  .margin-nav {
+    height: 5vh;
+    background: greenyellow;
+  }
   #section1,
   #section2,
   #section3 {
