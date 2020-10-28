@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
 }
@@ -40,21 +44,21 @@ header ul {
   list-style: none;
 }
 
-#section1,
-#section2,
-#section3 {
+main #section1,
+main #section2,
+main #section3 {
   height: 100vh;
 }
 
-#section1 {
+main #section1 {
   background-color: gold;
 }
 
-#section2 {
+main #section2 {
   background-color: #316925;
 }
 
-#section3 {
+main #section3 {
   background-color: #4f74da;
 }
 /*# sourceMappingURL=style.css.map */

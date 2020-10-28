@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
 }
@@ -29,20 +33,22 @@ header {
   }
 }
 
-#section1,
-#section2,
-#section3 {
-  height: 100vh;
-}
+main {
+  #section1,
+  #section2,
+  #section3 {
+    height: 100vh;
+  }
 
-#section1 {
-  background-color: gold;
-}
+  #section1 {
+    background-color: gold;
+  }
 
-#section2 {
-  background-color: rgb(49, 105, 37);
-}
+  #section2 {
+    background-color: rgb(49, 105, 37);
+  }
 
-#section3 {
-  background-color: rgb(79, 116, 218);
+  #section3 {
+    background-color: rgb(79, 116, 218);
+  }
 }
