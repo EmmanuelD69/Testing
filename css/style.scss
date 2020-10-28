@@ -3,3 +3,46 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  background: blue;
+  h1,
+  nav {
+    text-align: center;
+    width: 50vw;
+    background: chartreuse;
+  }
+  ul {
+    display: flex;
+    width: 100%;
+    background: cornflowerblue;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+}
+
+#section1,
+#section2,
+#section3 {
+  height: 100vh;
+}
+
+#section1 {
+  background-color: gold;
+}
+
+#section2 {
+  background-color: rgb(49, 105, 37);
+}
+
+#section3 {
+  background-color: rgb(79, 116, 218);
+}
