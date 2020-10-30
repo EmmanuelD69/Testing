@@ -10,6 +10,7 @@ html {
 
 body {
   min-height: 100vh;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 header {
@@ -17,7 +18,7 @@ header {
   display: flex;
   align-items: center;
   height: 5vh;
-  //   background: blue;
+  background: blue;
   h1,
   nav {
     text-align: center;
@@ -25,20 +26,41 @@ header {
     // background: chartreuse;
   }
   ul {
+    position: fixed;
+    top: 0;
+    right: 0;
     display: flex;
-    width: 100%;
-    // background: cornflowerblue;
-    justify-content: space-evenly;
+    flex-direction: column;
+    background: cornflowerblue;
     list-style: none;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 5rem;
+      background: red;
+      border: solid 1px;
+      text-decoration: none;
+    }
+    .link1 {
+      background-color: gold;
+    }
+    .link2 {
+      background-color: rgb(49, 105, 37);
+    }
+    .link3 {
+      background-color: rgb(79, 116, 218);
+    }
   }
 }
 
 main {
   /* simple div pour permettre de positionner la nav fixe au dessus de la 1ere section sans la recouvrir sur 5vh */
-  .margin-nav {
-    height: 5vh;
-    background: greenyellow;
-  }
+  // .margin-nav {
+  //   height: 5vh;
+  //   background: greenyellow;
+  // }
   #section1,
   #section2,
   #section3 {

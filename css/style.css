@@ -11,6 +11,8 @@ html {
 
 body {
   min-height: 100vh;
+  overflow: hidden;
+  /* Hide scrollbars */
 }
 
 header {
@@ -22,6 +24,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 5vh;
+  background: blue;
 }
 
 header h1,
@@ -31,23 +34,51 @@ header nav {
 }
 
 header ul {
+  position: fixed;
+  top: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: cornflowerblue;
   list-style: none;
+}
+
+header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: red;
+  border: solid 1px;
+  text-decoration: none;
+}
+
+header ul .link1 {
+  background-color: gold;
+}
+
+header ul .link2 {
+  background-color: #316925;
+}
+
+header ul .link3 {
+  background-color: #4f74da;
 }
 
 main {
   /* simple div pour permettre de positionner la nav fixe au dessus de la 1ere section sans la recouvrir sur 5vh */
-}
-
-main .margin-nav {
-  height: 5vh;
-  background: greenyellow;
 }
 
 main #section1,
