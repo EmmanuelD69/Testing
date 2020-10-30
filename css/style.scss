@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -47,8 +48,7 @@ header {
       width: 5rem;
       height: 5rem;
       background: red;
-      border: solid 1px;
-      text-decoration: none;
+      // border: solid 1px;
     }
     .link1 {
       background-color: gold;
@@ -89,4 +89,16 @@ main {
   #section3 {
     background-color: rgb(79, 116, 218);
   }
+}
+
+.scrollTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: orange;
+  width: 5rem;
+  height: 5rem;
 }

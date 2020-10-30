@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -69,8 +70,6 @@ header ul li {
   width: 5rem;
   height: 5rem;
   background: red;
-  border: solid 1px;
-  text-decoration: none;
 }
 
 header ul .link1 {
@@ -115,5 +114,23 @@ main #section2 {
 
 main #section3 {
   background-color: #4f74da;
+}
+
+.scrollTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: orange;
+  width: 5rem;
+  height: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
