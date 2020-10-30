@@ -7,12 +7,20 @@
 
 html {
   scroll-behavior: smooth;
+  /* hiding scroll bar but still functional */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* hiding scroll bar but still functional */
+html::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }
 
 body {
   min-height: 100vh;
-  overflow: hidden;
-  /* Hide scrollbars */
 }
 
 header {
