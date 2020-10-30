@@ -84,10 +84,6 @@ header ul .link3 {
   background-color: #4f74da;
 }
 
-main {
-  /* simple div pour permettre de positionner la nav fixe au dessus de la 1ere section sans la recouvrir sur 5vh */
-}
-
 main #section1,
 main #section2,
 main #section3 {
