@@ -48,15 +48,16 @@ header {
       width: 5rem;
       height: 5rem;
       background: red;
+      cursor: pointer;
       // border: solid 1px;
     }
-    .link1 {
+    #link1 {
       background-color: gold;
     }
-    .link2 {
+    #link2 {
       background-color: rgb(49, 105, 37);
     }
-    .link3 {
+    #link3 {
       background-color: rgb(79, 116, 218);
     }
   }
@@ -86,7 +87,7 @@ main {
   }
 }
 
-.scrollTop {
+#scrollTop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,4 +97,5 @@ main {
   background: orange;
   width: 5rem;
   height: 5rem;
+  cursor: pointer;
 }

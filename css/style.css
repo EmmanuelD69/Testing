@@ -70,17 +70,18 @@ header ul li {
   width: 5rem;
   height: 5rem;
   background: red;
+  cursor: pointer;
 }
 
-header ul .link1 {
+header ul #link1 {
   background-color: gold;
 }
 
-header ul .link2 {
+header ul #link2 {
   background-color: #316925;
 }
 
-header ul .link3 {
+header ul #link3 {
   background-color: #4f74da;
 }
 
@@ -112,7 +113,7 @@ main #section3 {
   background-color: #4f74da;
 }
 
-.scrollTop {
+#scrollTop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,5 +129,6 @@ main #section3 {
   background: orange;
   width: 5rem;
   height: 5rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

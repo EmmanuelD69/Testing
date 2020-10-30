@@ -2,7 +2,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM entièrement chargé et analysé");
   });
 
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll(".link");
+// console.log(links)
 
 links.forEach(function(link){
   // console.log(link)
@@ -10,19 +11,26 @@ links.forEach(function(link){
 })
 
 function test (e) {
-  // console.log(e.target.className);
-  switch (e.target.className) {
+  // console.log(e.target);
+  switch (e.target.id) {
     case "link1":
-      console.log("section 1")
-      break
+      window.scrollTo(0, 0);
+      break;
+
     case "link2":
-      console.log("section 2")
-      break
+      window.scrollTo(0, 950);
+      break;
+
     case "link3":
-      console.log("section 3")
-      break
+      window.scrollTo(0, 2000);
+      break;
+
     case "scrollTop":
-      console.log("back to the top")
-      break
+      window.scrollTo(0, 0);
+      break;
+
+    default:
+    console.log(`error`);
   }
 }
+
